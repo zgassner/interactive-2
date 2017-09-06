@@ -1,0 +1,69 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* container */
+
+.container {
+	position: relative;
+}
+
+/* items */
+
+.item {
+	height: 250px;
+	width: 250px;
+	border: 5px dashed blue;
+	background: white;
+	color: blue;
+
+	position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 30px;
+
+    font-family: Andale Mono;
+
+	/* comment out 'float: left;' to have items stack in a single column */
+	/* float: left; */
+
+	/* uncomment this to get CSS transitions (conflicts with jQuery) */
+	/* transition: all 500ms ease; */
+}
+
+/* example buttons */
+
+/* #button-1:hover {
+} */
+
+#button-1:active {
+	background: blue;
+	opacity: 1;
+	transform: skew(20deg);
+}
+
+/* example buttons */
+
+#button-2::after {
+	content: '';
+	color: white;
+}
+
+
+#button-2:hover::after {
+	content: '*';
+	color: tomato;
+	font-size: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
