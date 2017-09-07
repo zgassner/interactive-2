@@ -18,11 +18,10 @@ body {
 /* items */
 
 .item {
-	height: 250px;
-	width: 250px;
-	border: 5px dashed blue;
+	height: 200px;
+	width: 200px;
 	background: white;
-	color: blue;
+	color: black;
 
 	position: relative;
     margin-top: 50px;
@@ -46,24 +45,78 @@ body {
 /* #button-1:hover {
 } */
 
-#button-1:active {
-	background: blue;
-	opacity: 1;
-	transform: skew(20deg);
-}
-
-/* example buttons */
-
-#button-2::after {
-	content: '';
+#button-1 {
+	font-family: Courier New;
+	font-size: 160px;
 	color: white;
+	border: 5px dashed blue;
+	cursor: pointer;
 }
 
+#button-1:active {
+	color: blue;
+}
 
-#button-2:hover::after {
-	content: '*';
-	color: tomato;
-	font-size: 400px;
-    margin-right: auto;
-    margin-left: auto;
+#button-2 {
+	border: 5px dashed tomato;
+	cursor: pointer;
+}
+
+#button-2:active {
+	transition: transform 2s, background-color 1s;
+	background-color: tomato;
+	transform: skew(-720deg);
+}
+
+#button-3 {
+	border: 5px dashed lime;
+	cursor: pointer;
+}
+
+#button-4 {
+	border: 5px dashed purple;
+	cursor: pointer;
+}
+
+.circle {
+	border-radius: 50% !important;
+}
+
+#button-5 {
+	border: 5px dashed lightblue;
+	cursor: pointer;
+}
+
+#button-5:active {
+	animation-name: button-5rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes button-5rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+#button-6 {
+	border: 5px dashed gold;
+	cursor: pointer;
+}
+
+#button-7 {
+	border: 5px dashed orangered;
+	cursor: pointer;
+}
+
+#button-8 {
+	font-size: 170px;
+	font-family: Courier New;
+	color: deeppink;
+	border: 5px dashed deeppink;
+	cursor: pointer;
+}
+
+#button-9 {
+	border: 5px dashed aqua;
 }
