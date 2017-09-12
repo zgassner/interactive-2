@@ -9,6 +9,10 @@ body {
 	font-family: helvetica, arial, sans-serif;
 }
 
+.center {
+	text-align: center;
+}
+
 /* container */
 
 .container {
@@ -18,8 +22,8 @@ body {
 /* items */
 
 .item {
-	height: 200px;
-	width: 200px;
+	height: 100px;
+	width: 100px;
 	background: white;
 	color: black;
 
@@ -34,10 +38,10 @@ body {
     font-family: Andale Mono;
 
 	/* comment out 'float: left;' to have items stack in a single column */
-	/* float: left; */
+	 /*float: left; */
 
 	/* uncomment this to get CSS transitions (conflicts with jQuery) */
-	/* transition: all 500ms ease; */
+	 /*transition: all 500ms ease;*/ 
 }
 
 /* example buttons */
@@ -47,10 +51,11 @@ body {
 
 #button-1 {
 	font-family: Courier New;
-	font-size: 160px;
+	font-size: 100px;
 	color: white;
 	border: 5px dashed blue;
 	cursor: pointer;
+	transition: all 500ms ease;
 }
 
 #button-1:active {
@@ -63,9 +68,9 @@ body {
 }
 
 #button-2:active {
-	transition: transform 2s, background-color 1s;
+	transition: transform 30s, background-color 1s;
 	background-color: tomato;
-	transform: skew(-720deg);
+	transform: skew(-9999999999deg);
 }
 
 #button-3 {
@@ -76,6 +81,7 @@ body {
 #button-4 {
 	border: 5px dashed purple;
 	cursor: pointer;
+	transition: all 500ms ease;
 }
 
 .circle {
@@ -83,6 +89,9 @@ body {
 }
 
 #button-5 {
+	color: lightblue;
+	font-size: 30px;
+	font-variant: small-caps;
 	border: 5px dashed lightblue;
 	cursor: pointer;
 }
@@ -110,7 +119,7 @@ body {
 }
 
 #button-8 {
-	font-size: 170px;
+	font-size: 85px;
 	font-family: Courier New;
 	color: deeppink;
 	border: 5px dashed deeppink;
@@ -119,4 +128,402 @@ body {
 
 #button-9 {
 	border: 5px dashed aqua;
+	cursor: pointer;
+}
+
+#button-10 {
+	border: 5px dashed springgreen;
+	cursor: pointer;
+}
+
+#counter {
+    font-size: 150px;
+    color: indigo;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#button-11 {
+	border: 5px dashed indigo;
+	cursor: pointer;
+}
+
+#button-12 {
+	border: 5px dashed yellow;
+	cursor: pointer;
+	transition: all 500ms ease;
+}
+
+#button-13 {
+	border: 5px dashed powderblue;
+	cursor: pointer;
+}
+
+#button-14 {
+	border: 5px dashed darkorange;
+	cursor: pointer;
+}
+
+#button-15 {
+	border: 5px dashed greenyellow;
+	cursor: pointer;
+}
+
+#question {
+	font-size: 50px;
+    color: crimson;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#button-16 {
+	border: 5px dashed crimson;
+	cursor: pointer;
+}
+
+.asterisk {
+    position: fixed;
+    font-size: 500px;
+    z-index: 9;
+    
+    color: magenta;
+}
+
+#button-17 {
+	border: 5px dashed magenta;
+	cursor: pointer;
+}
+
+#button-18 {
+	border: 5px dashed dodgerblue;
+	cursor: pointer;
+}
+
+#frown {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 100%;
+    max-height: 100px;
+    margin: 0;
+    z-index: -1;
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+    word-break: break-all;
+    color: seagreen;
+}
+
+#button-19 {
+	border: 5px dashed seagreen;
+	cursor: pointer;
+}
+
+#lock {
+    background-color: coral;
+    z-index: 10;
+    display: none;
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+.circle2 {
+    width:100px;
+    height:100px;
+    padding: 0;
+    margin: 0;
+    
+    border-radius: 50px;
+    
+    outline: none;
+    
+    position: relative;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+#button-20 {
+	border: 5px dashed coral;
+	cursor: pointer;
+}
+
+#button-21 {
+	border: 5px dashed mediumaquamarine;
+	cursor: pointer;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1500ms ease;
+                -ms-transition: all 1500ms ease;
+                -o-transition: all 1500ms ease;
+                transition: all 1500ms ease;
+}
+
+#button-21:active {
+    width: 700px;
+    border-radius: 600px;
+    height: 700px;
+}
+
+#button-22 {
+	border: 5px dashed firebrick;
+	cursor: pointer;
+}
+
+#button-23 {
+	border: 5px dashed hotpink;
+	cursor: pointer;
+}
+
+#button-24 {
+	border: 5px dashed goldenrod;
+	cursor: pointer;
+}
+
+#button-25 {
+	border: 5px dashed mediumspringgreen;
+	cursor: pointer;
+
+	-webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+#button-26 {
+	border: 5px dashed steelblue;
+	cursor: pointer;
+}
+
+#button-26:active {
+	transition: opacity .2s ease;
+	opacity: 0;
+}
+
+#button-27 {
+	border: 5px dashed blueviolet;
+	cursor: pointer;
+}
+
+#button-28 {
+	border: 5px dashed yellow;
+	cursor: pointer;
+}
+
+#button-29 {
+	border: 5px dashed mediumvioletred;
+	cursor: pointer;
+}
+
+#button-30 {
+	border: 5px dashed orangered;
+	cursor: pointer;
+}
+
+#green {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-color: #3EBD88;
+    -webkit-transition: all 1500ms ease;
+                -moz-transition: all 1500ms ease;
+                -ms-transition: all 1500ms ease;
+                -o-transition: all 1500ms ease;
+                transition: all 1500ms ease;
+    
+}
+
+#whatif {
+    font-family: Courier;
+    color: lightgreen;
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+#button-31 {
+	border: 5px dashed lightgreen;
+	cursor: pointer;
+}
+
+#button-32 {
+	border: 5px dashed darkturquoise;
+	cursor: pointer;
+}
+
+#button-33 {
+	border: 5px dashed darkblue;
+	cursor: pointer;
+}
+
+#button-34 {
+	border: 5px dashed indianred;
+	cursor: pointer;
+}
+
+#screenX {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: red;
+	font-weight: bold;
+
+	text-align: center;
+    margin: 0;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#button-35 {
+	border: 5px dashed red;
+	cursor: pointer;
+}
+
+#button-36 {
+	border: 5px dashed skyblue;
+	cursor: pointer;
+}
+
+#button-37 {
+	border: 5px dashed lime;
+	cursor: pointer;
+}
+
+#button-38 {
+	border: 5px dashed khaki;
+	cursor: pointer;
+}
+
+.smile {
+    position: fixed;
+    font-size: 400px;
+    z-index: 9;
+    
+    color: blue;
+}
+
+#button-39 {
+	border: 5px dashed blue;
+	cursor: pointer;
+}
+
+.skew {
+    -moz-transform: skew(-90deg);
+    -o-transform: skew(-90deg);
+    -webkit-transform: skew(-90deg);
+    transform: skew(-90deg);
+}
+
+#button-40 {
+	border: 5px dashed fuchsia;
+	cursor: pointer;
+
+	-moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+#button-41 {
+	border: 5px dashed olivedrab;
+	cursor: pointer;
+}
+
+#button-42 {
+	border: 5px dashed lightpink;
+	cursor: pointer;
+}
+
+#button-43 {
+	border: 5px dashed tomato;
+	cursor: pointer;
+
+	-webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+#button-44 {
+	border: 5px dashed cyan;
+	cursor: pointer;
+}
+
+#button-45 {
+	border: 5px dashed indigo;
+	cursor: pointer;
+}
+
+.sun {
+    position: fixed;
+    font-size: 300px;
+    z-index: 9;
+    
+    color: palegreen;
+}
+
+#button-46 {
+	border: 5px dashed palegreen;
+	cursor: pointer;
+}
+
+#button-47 {
+	border: 5px dashed mediumvioletred;
+	cursor: pointer;
+}
+
+#button-48 {
+	border: 5px dashed dodgerblue;
+	cursor: pointer;
+}
+
+#button-49 {
+	border: 5px dashed gold;
+	cursor: pointer;
+}
+
+#screenY {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: gold;
+	font-weight: bold;
+
+	text-align: center;
+    margin: 0;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#button-50 {
+	border: 5px dashed black;
+	cursor: pointer;
 }
