@@ -1,0 +1,26 @@
+body {
+	background-image: url("../images/hands/1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+
+	height: 5800px;
+}
+
+#clap {
+	width: 500px;
+	height: 500px;
+	z-index: 1;
+	/*opacity: .5;*/
+
+	position: fixed;
+    top: 25%;
+    left: 35%;
+
+    font-family: 'Germania One', cursive;
+    font-size: 10vw;
+    letter-spacing: 5px;
+    color: yellow;
+    opacity: 0;
+}
