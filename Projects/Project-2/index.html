@@ -1,0 +1,2608 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOMINO</title>
+
+    <link rel="stylesheet" href="assets/main.css" type="text/css" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="assets/script.js"></script>
+
+</head>
+
+<body>
+
+	<audio id="music" src="sound/domino.m4a" loop="loop"></audio>
+
+	<!-- the GRID -->
+
+		<!-- <div class="container grid"> -->
+
+		<!--the LONG SEGMENTS -->
+		<!-- <div class="vLeft on"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle on"></div>
+		<div class="hMiddleTop on"></div>
+		<div class="hMiddleBottom on"></div>
+		<div class="vMiddle on"></div> -->
+
+		<!--the SHORT SEGMENTS -->
+		<!-- <div class="hTop1 on"></div>
+		<div class="hTop2 on"></div>
+		<div class="hTopMiddle1 on"></div>
+		<div class="hTopMiddle2 on"></div>
+		<div class="hMiddle1 on"></div>
+		<div class="hMiddle2 on"></div>
+		<div class="hMiddleBottom1 on"></div>
+		<div class="hMiddleBottom2 on"></div>
+		<div class="hBottom1 on"></div>
+		<div class="hBottom2 on"></div> -->
+
+		<!-- <div class="vLeft1 on"></div>
+		<div class="vLeft2 on"></div>
+		<div class="vLeft3 on"></div>
+		<div class="vLeft4 on"></div>
+		<div class="vMiddle1 on"></div>
+		<div class="vMiddle2 on"></div>
+		<div class="vMiddle3 on"></div>
+		<div class="vMiddle4 on"></div>
+		<div class="vRight1 on"></div>
+		<div class="vRight2 on"></div>
+		<div class="vRight3 on"></div>
+		<div class="vRight4 on"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 on"></div>
+		<div class="dRight4 on"></div> -->
+
+	<!-- </div> -->
+
+
+<div id='title'>
+	
+	<div class="container2 d">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 on"></div>
+		<div class="dRight4 on"></div>
+
+	</div>
+
+	<div class="container2 o">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container2 m">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container2 grid">
+
+		<!-- the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle on"></div>
+		<div class="hMiddleTop on"></div>
+		<div class="hMiddleBottom on"></div>
+		<div class="vMiddle on"></div>
+
+		<!-- the SHORT SEGMENTS -->
+		<div class="hTop1 on"></div>
+		<div class="hTop2 on"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 on"></div>
+		<div class="hMiddle2 on"></div>
+		<div class="hMiddleBottom1 on"></div>
+		<div class="hMiddleBottom2 on"></div>
+		<div class="hBottom1 on"></div>
+		<div class="hBottom2 on"></div>
+
+		<div class="vLeft1 on"></div>
+		<div class="vLeft2 on"></div>
+		<div class="vLeft3 on"></div>
+		<div class="vLeft4 on"></div>
+		<div class="vMiddle1 on"></div>
+		<div class="vMiddle2 on"></div>
+		<div class="vMiddle3 on"></div>
+		<div class="vMiddle4 on"></div>
+		<div class="vRight1 on"></div>
+		<div class="vRight2 on"></div>
+		<div class="vRight3 on"></div>
+		<div class="vRight4 on"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 on"></div>
+		<div class="dRight4 on"></div>
+
+	</div>
+
+	<div class="container2 grid">
+
+		<!-- the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle on"></div>
+		<div class="hMiddleTop on"></div>
+		<div class="hMiddleBottom on"></div>
+		<div class="vMiddle on"></div>
+
+		<!-- the SHORT SEGMENTS -->
+		<div class="hTop1 on"></div>
+		<div class="hTop2 on"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 on"></div>
+		<div class="hMiddle2 on"></div>
+		<div class="hMiddleBottom1 on"></div>
+		<div class="hMiddleBottom2 on"></div>
+		<div class="hBottom1 on"></div>
+		<div class="hBottom2 on"></div>
+
+		<div class="vLeft1 on"></div>
+		<div class="vLeft2 on"></div>
+		<div class="vLeft3 on"></div>
+		<div class="vLeft4 on"></div>
+		<div class="vMiddle1 on"></div>
+		<div class="vMiddle2 on"></div>
+		<div class="vMiddle3 on"></div>
+		<div class="vMiddle4 on"></div>
+		<div class="vRight1 on"></div>
+		<div class="vRight2 on"></div>
+		<div class="vRight3 on"></div>
+		<div class="vRight4 on"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 on"></div>
+		<div class="dRight4 on"></div>
+
+	</div>
+
+	<div class="container2 i">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle on"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container2 n">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container2 o">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+
+</div>
+
+<div id="speciman">
+
+	<!-- the LETTERS -->
+
+	<div class="container a">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 on"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container b">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container c">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container d">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 on"></div>
+		<div class="dRight4 on"></div>
+
+	</div>
+
+	<div class="container e">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 on"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 on"></div>
+		<div class="dRight4 on"></div>
+
+	</div>
+
+	<div class="container f">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 on"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 on"></div>
+		<div class="dRight4 on"></div>
+
+	</div>
+	
+	<div class="container g">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container h">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle on"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container i">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle on"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container j">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 on"></div>
+		<div class="dRight4 on"></div>
+
+	</div>
+	
+
+	<div class="container k">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 on"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container l">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container m">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container n">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container o">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container p">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 on"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container q">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container r">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 on"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container s">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 on"></div>
+		<div class="vLeft4 on"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 on"></div>
+		<div class="vRight2 on"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container t">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle on"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container u">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container v">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container w">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 on"></div>
+		<div class="dRight4 on"></div>
+
+	</div>
+
+	<div class="container x">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container y">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 on"></div>
+		<div class="vMiddle4 on"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container z">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+</div>
+
+
+<div id="numbers">
+
+	<!-- the NUMBERS -->
+
+	<div class="container zero">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft on"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight on"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container one">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle on"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 on"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container two">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 on"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 on"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container three">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 on"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 on"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container four">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight on"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 on"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container five">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 on"></div>
+		<div class="hTopMiddle2 on"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 on"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 on"></div>
+		<div class="vRight3 on"></div>
+		<div class="vRight4 on"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container six">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 on"></div>
+		<div class="dLeft4 on"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container seven">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container eight">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft on"></div>
+		<div class="hBottom on"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container nine">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight on"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 on"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+</div>
+
+
+<div id="punctuation">
+
+	<!-- the PUNCTUATION -->
+
+	<div class="container period">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+		<div class="dot on"></div>
+
+	</div>
+
+	<div class="container question">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 on"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 on"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+		<div class="dot on"></div>
+
+	</div>
+
+	<div class="container exclamation">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 on"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 on"></div>
+		<div class="dRight2 on"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+		<div class="dot on"></div>
+
+	</div>
+
+	<div class="container comma">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop off"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 on"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 off"></div>
+		<div class="vMiddle2 off"></div>
+		<div class="vMiddle3 on"></div>
+		<div class="vMiddle4 on"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div>
+
+		<div class="container quotes1">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 on"></div>
+		<div class="vLeft2 on"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 on"></div>
+		<div class="vMiddle2 on"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 off"></div>
+		<div class="vRight2 off"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+	<div class="container quotes2">
+		
+		<!--the LONG SEGMENTS -->
+		<div class="vLeft off"></div>
+		<div class="dLeft off"></div>
+		<div class="hBottom off"></div>
+		<div class="hTop on"></div>
+		<div class="vRight off"></div>
+		<div class="dRight off"></div>
+		<div class="hMiddle off"></div>
+		<div class="hMiddleTop off"></div>
+		<div class="hMiddleBottom off"></div>
+		<div class="vMiddle off"></div>
+
+		<!--the SHORT SEGMENTS -->
+		<div class="hTop1 off"></div>
+		<div class="hTop2 off"></div>
+		<div class="hTopMiddle1 off"></div>
+		<div class="hTopMiddle2 off"></div>
+		<div class="hMiddle1 off"></div>
+		<div class="hMiddle2 off"></div>
+		<div class="hMiddleBottom1 off"></div>
+		<div class="hMiddleBottom2 off"></div>
+		<div class="hBottom1 off"></div>
+		<div class="hBottom2 off"></div>
+
+		<div class="vLeft1 off"></div>
+		<div class="vLeft2 off"></div>
+		<div class="vLeft3 off"></div>
+		<div class="vLeft4 off"></div>
+		<div class="vMiddle1 on"></div>
+		<div class="vMiddle2 on"></div>
+		<div class="vMiddle3 off"></div>
+		<div class="vMiddle4 off"></div>
+		<div class="vRight1 on"></div>
+		<div class="vRight2 on"></div>
+		<div class="vRight3 off"></div>
+		<div class="vRight4 off"></div>
+
+		<div class="dLeft1 off"></div>
+		<div class="dLeft2 off"></div>
+		<div class="dLeft3 off"></div>
+		<div class="dLeft4 off"></div>
+		<div class="dRight1 off"></div>
+		<div class="dRight2 off"></div>
+		<div class="dRight3 off"></div>
+		<div class="dRight4 off"></div>
+
+	</div>
+
+</div>
+
+</body>
+
+</html>

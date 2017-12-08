@@ -26,7 +26,7 @@ $(document).ready(function(){
   		$(this).css("cursor", "progress");
 	});
 
-	$("#button-8").click(function(){
+	$("container2d").click(function(){
 		if ($(this).text() == "OK")
   		 $(this).text("KO")
 		else

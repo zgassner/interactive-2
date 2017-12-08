@@ -1,0 +1,472 @@
+/* Misc */
+
+body{
+	height: 7800px;
+	margin: 0px;
+}
+
+.no-scroll{
+	overflow: hidden;
+}
+
+.infobutton{
+	font-family: "freight-text-pro";
+	font-size: 4vw;
+	color: grey;
+
+	margin-left: 3%;
+	bottom: 3%;
+	position: fixed;
+	z-index: 200;
+
+	cursor: help;
+
+	transition: opacity 1s;
+}
+
+#content{
+	transform: scale(.8);
+}
+
+
+
+/* Title */
+
+#showtitle{
+	transition: opacity .075s;
+}
+
+#showtitle p{
+	font-family: "freight-text-pro";
+	font-size: 8vw;
+	letter-spacing: .5vw;
+
+	margin-left: 10vw;
+	position: fixed;
+	float: left;
+
+	transition: opacity 5s;
+}
+
+#artist{
+	transition: opacity .075s;
+}
+
+#artist p{
+	font-family: "freight-text-pro";
+	font-size: 8vw;
+	font-style: italic;
+
+	margin-left: 26.5vw;
+	position: fixed;
+}
+
+
+
+/* Quote */
+
+#quote{
+	opacity: 0;
+	margin-left: 2.5vw;
+
+	transition: opacity .15s;
+}
+
+#said p{
+	font-family: "freight-text-pro";
+	font-size: 2vw;
+	font-style: italic;
+
+	margin-top: 35vh;
+	margin-left: 22vw;
+	position: fixed;
+}
+
+#source p{
+	font-family: "freight-text-pro";
+	font-size: 1.5vw;
+
+	margin-top: 43vh;
+	margin-left: 26.5vw;
+	position: fixed;
+}
+
+
+/* Exhibition Info */
+
+#info{
+	width: 100vw;
+	z-index: 100;
+
+	background-color: white;
+	position: fixed;
+
+	opacity: .9;
+}
+
+#exhibition p{
+	opacity: 1;
+}
+
+#exhibition{
+	font-family: "freight-text-pro";
+	font-size: 1.75vw;
+	line-height: 1.5;
+
+	height: 80vh;
+
+	margin-left: 10%;
+	margin-right: 25%;
+	margin-top: 10%;
+	margin-bottom: 20%;
+}
+
+#details{
+	margin-left: 10%;
+}
+
+#dates{
+	font-family: "freight-text-pro";
+	font-size: 1.2vw;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+
+	margin-top: 40%;
+	margin-left: 10%;
+}
+
+/* Works */
+
+.work{
+	cursor: crosshair;
+}
+
+.workinfo{
+	font-family: "freight-text-pro";
+	font-size: 1vw;
+
+	margin-top: -23vw;
+	margin-left: 55vw;
+	margin-right: 10vw;
+}
+
+/* Sky */
+
+.work #one img{
+	width: 20vw;
+
+	margin-top: 6200px;
+	margin-left: 10vw;
+	position: absolute;
+}
+
+#one{
+	transition: opacity .5s;
+
+	z-index: 3;
+}
+
+#oneinfo{
+	width: 80%;
+	height: 80%;
+	margin-left: 10vw;
+	margin-top: 10vh;
+	z-index: 2;
+
+	background-color: white;
+	box-shadow: 10px  10px 50px grey;
+	position: fixed;
+
+	cursor: alias;
+}
+
+#sky{
+	margin-top: 10vw;
+	margin-left: 10vw;
+	width: 35vw;
+}
+
+/* Bottoms */
+
+.work #two img{
+	width: 20vw;
+
+	margin-top: 6400px;
+	margin-left: 40vw;
+	position: absolute;
+}
+
+#two{
+	transition: opacity .5s;
+}
+
+#twoinfo{
+	width: 80%;
+	height: 80%;
+	margin-left: 10vw;
+	margin-top: 10vh;
+	z-index: 2;
+
+	background-color: white;
+	box-shadow: 10px  10px 50px grey;
+	position: fixed;
+
+	cursor: alias;
+}
+
+#bottoms{
+	margin-top: 10vw;
+	margin-left: 10vw;
+	width: 20vw;
+}
+
+/* Grapefruit */
+
+.work #three img{
+	width: 20vw;
+
+	margin-top: 6650px;
+	margin-left: 10vw;
+	position: absolute;
+}
+
+#three{
+	transition: opacity .5s;
+}
+
+#threeinfo{
+	width: 80%;
+	height: 80%;
+	margin-left: 10vw;
+	margin-top: 10vh;
+	z-index: 2;
+
+	background-color: white;
+	box-shadow: 10px  10px 50px grey;
+	position: fixed;
+
+	cursor: alias;
+}
+
+#grapefruit{
+	margin-top: 10vw;
+	margin-left: 10vw;
+	width: 20vw;
+}
+
+/* Hammer */
+
+.work #four img{
+	width: 20vw;
+
+	margin-top: 6000px;
+	margin-left: 70vw;
+	position: absolute;
+}
+
+#four{
+	transition: opacity .5s;
+}
+
+#fourinfo{
+	width: 80%;
+	height: 80%;
+	margin-left: 10vw;
+	margin-top: 10vh;
+	z-index: 2;
+
+	background-color: white;
+	box-shadow: 10px  10px 50px grey;
+	position: fixed;
+
+	cursor: alias;
+}
+
+#hammer{
+	margin-top: 10vw;
+	margin-left: 10vw;
+	width: 20vw;
+}
+
+/* Night Air */
+
+.work #five img{
+	width: 20vw;
+
+	margin-top: 6825px;
+	margin-left: 70vw;
+	position: absolute;
+}
+
+#five{
+	transition: opacity .5s;
+}
+
+/* Sky Machine */
+
+.work #six img{
+	width: 20vw;
+
+	margin-top: 7050px;
+	margin-left: 40vw;
+	position: absolute;
+}
+
+#six{
+	transition: opacity .5s;
+}
+
+/* Self Portrait */
+
+.work #seven img{
+	width: 20vw;
+
+	margin-top: 7900px;
+	margin-left: 40vw;
+	position: absolute;
+}
+
+#seven{
+	transition: opacity .5s;
+}
+
+/* Sales List */
+
+.work #eight img{
+	width: 20vw;
+
+	margin-top: 7325px;
+	margin-left: 10vw;
+	position: absolute;
+}
+
+#eight{
+	transition: opacity .5s;
+}
+
+/* Bag Piece */
+
+.work #nine img{
+	width: 20vw;
+
+	margin-top: 7450px;
+	margin-left: 70vw;
+	position: absolute;
+}
+
+#nine{
+	transition: opacity .5s;
+}
+
+/* Cut Piece */
+
+.work #ten img{
+	width: 20vw;
+
+	margin-top: 8075px;
+	margin-left: 10vw;
+	position: absolute;
+}
+
+#ten{
+	transition: opacity .5s;
+}
+
+/* Piece for Nam June Paik */
+
+.work #eleven img{
+	width: 20vw;
+
+	margin-top: 7975px;
+	margin-left: 70vw;
+	position: absolute;
+}
+
+#eleven{
+	transition: opacity .5s;
+}
+
+/* Plastic Ono Band */
+
+.work #twelve img{
+	width: 20vw;
+
+	margin-top: 8600px;
+	margin-left: 70vw;
+	position: absolute;
+}
+
+#twelve{
+	transition: opacity .5s;
+}
+
+/* Painting to Nail */
+
+.work #thirteen img{
+	width: 20vw;
+
+	margin-top: 8650px;
+	margin-left: 10vw;
+	position: absolute;
+}
+
+#thirteen{
+	transition: opacity .5s;
+}
+
+/* Box of Smile */
+
+.work #fourteen img{
+	width: 20vw;
+
+	margin-top: 8250px;
+	margin-left: 40vw;
+	position: absolute;
+}
+
+#fourteen{
+	transition: opacity .5s;
+}
+
+/* This Is Not Here */
+
+.work #fifteen img{
+	width: 20vw;
+
+	margin-top: 9075px;
+	margin-left: 70vw;
+	position: absolute;
+}
+
+#fifteen{
+	transition: opacity .5s;
+}
+
+/* War Is Over */
+
+.work #sixteen img{
+	width: 20vw;
+
+	margin-top: 8750px;
+	margin-left: 40vw;
+	position: absolute;
+}
+
+#sixteen{
+	transition: opacity .5s;
+}
+
+/* Eyeblink */
+
+.work #seventeen img{
+	width: 20vw;
+
+	margin-top: 9250px;
+	margin-left: 10vw;
+	position: absolute;
+}
+
+#seventeen{
+	transition: opacity .5s;
+}
+
