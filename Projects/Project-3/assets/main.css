@@ -1,7 +1,7 @@
 /* Misc */
 
 body{
-	height: 7800px;
+	height: 9000px;
 	margin: 0px;
 }
 
@@ -25,7 +25,7 @@ body{
 }
 
 #content{
-	transform: scale(.8);
+	transform: scale(.9);
 }
 
 
@@ -59,6 +59,18 @@ body{
 
 	margin-left: 26.5vw;
 	position: fixed;
+}
+
+#exdates p{
+	font-family: "freight-text-pro";
+	font-size: 2vw;
+	font-style: italic;
+
+
+	margin-top: 20vw;
+	margin-left: 15vw;
+	position: fixed;
+	letter-spacing: 1px;
 }
 
 
@@ -174,7 +186,7 @@ body{
 	z-index: 2;
 
 	background-color: white;
-	box-shadow: 10px  10px 50px grey;
+	box-shadow: 0px 0px 50px grey;
 	position: fixed;
 
 	cursor: alias;

@@ -49,6 +49,7 @@ $(document).ready(function(){
 		scrollpos = $(this).scrollTop();
 		if(scrollpos < 1200) {
 			$("#showtitle").css("opacity", "1");
+			$("#exdates").css("opacity", "1");
 		}
 	})
 
@@ -56,6 +57,7 @@ $(document).ready(function(){
 		scrollpos = $(this).scrollTop();
 		if(scrollpos > 1200) {
 			$("#showtitle").css("opacity", ".75");
+			$("#exdates").css("opacity", ".75");
 		}
 	})
 
@@ -63,6 +65,7 @@ $(document).ready(function(){
 		scrollpos = $(this).scrollTop();
 		if(scrollpos > 1400) {
 			$("#showtitle").css("opacity", ".5");
+			$("#exdates").css("opacity", ".5");
 		}
 	})
 
@@ -70,6 +73,7 @@ $(document).ready(function(){
 		scrollpos = $(this).scrollTop();
 		if(scrollpos > 1600) {
 			$("#showtitle").css("opacity", ".25");
+			$("#exdates").css("opacity", ".25");
 		}
 	})
 
@@ -77,6 +81,7 @@ $(document).ready(function(){
 		scrollpos = $(this).scrollTop();
 		if(scrollpos > 1800) {
 			$("#showtitle").css("opacity", "0");
+			$("#exdates").css("opacity", "0");
 		}
 	})
 
