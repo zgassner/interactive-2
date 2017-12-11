@@ -61,6 +61,10 @@ body{
 	position: fixed;
 }
 
+#exdates{
+	transition: opacity .075s;
+}
+
 #exdates p{
 	font-family: "freight-text-pro";
 	font-size: 2vw;
